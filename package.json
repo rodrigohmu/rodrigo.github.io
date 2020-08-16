@@ -1,0 +1,23 @@
+{
+  "name": "youtube.external.subtitle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "youtube.external.subtitle.js",
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "rollup -c",
+    "test": "jest",
+    "coverage": "jest --collect-coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^4.1.2",
+    "@types/jest": "^25.2.3",
+    "jest": "^25.5.4",
+    "rollup": "^2.23.0",
+    "ts-jest": "^25.5.1",
+    "tslib": "^1.13.0",
+    "typescript": "^3.9.7"
+  }
+}
