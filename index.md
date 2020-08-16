@@ -35,3 +35,35 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+<iframe id="video" width="100%" height="400" src="https://www.youtube.com/watch?v=jYB822q4LMk" frameborder="0" allowfullscreen="true"></iframe>
+<script src="yellow/youtube.external.subtitle.js"></script>
+<script src="yellow/subtitles.parser.min.js "></script>
+<script>
+var loadSRT = function(url, callback) {
+    var httpRequest = new XMLHttpRequest();
+
+    httpRequest.onreadystatechange = function() {
+        if (httpRequest.readyState === XMLHttpRequest.DONE) {
+            var subtitles = parser.fromSrt(httpRequest.responseText, true);
+
+            for (var i in subtitles) {
+                subtitles[i] = {
+                    start : subtitles[i].startTime / 1000,
+                    end   : subtitles[i].endTime / 1000,
+                    text  : subtitles[i].text
+                };
+            }
+
+            callback(subtitles);
+        }
+    };
+
+    httpRequest.open('GET', url, true);
+    httpRequest.send(null);
+};
+
+loadSRT('yellow/subs/Im_a_Yappie._ptbr.srt', function(subtitles) {
+    var youtubeExternalSubtitle = new YoutubeExternalSubtitle.Subtitle(document.getElementById('video'), subtitles);
+});
+</script>
