@@ -64,7 +64,7 @@ var loadSRT = function(url, callback) {
     httpRequest.send(null);
 };
 
-loadSRT('yellow/subs/Im_a_Yappie._ptbr.srt', function(subtitles) {
+loadSRT('https://rodrigohmu.github.io/yellow/subs/Im_a_Yappie._ptbr.srt', function(subtitles) {
     var youtubeExternalSubtitle = new YoutubeExternalSubtitle.Subtitle(document.getElementById('video'), subtitles);
 });
 </script>
