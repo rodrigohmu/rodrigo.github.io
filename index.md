@@ -36,6 +36,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
+<figure class="video_container">
 <iframe id="video" width="100%" height="400" src="https://www.youtube.com/watch?v=jYB822q4LMk" frameborder="0" allowfullscreen="true"></iframe>
 <script src="yellow/youtube.external.subtitle.js"></script>
 <script src="yellow/subtitles.parser.min.js "></script>
@@ -67,3 +68,5 @@ loadSRT('yellow/subs/Im_a_Yappie._ptbr.srt', function(subtitles) {
     var youtubeExternalSubtitle = new YoutubeExternalSubtitle.Subtitle(document.getElementById('video'), subtitles);
 });
 </script>
+</figure>
+
