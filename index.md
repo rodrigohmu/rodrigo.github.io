@@ -27,6 +27,8 @@ var loadSRT = function(url, callback) {
     httpRequest.send(null);
 };
 
+<button id="fullscreen-btn">Tela inteira</button>
+
 loadSRT('subs/Im_a_Yappie._ptbr.srt', function(subtitles) {
     var youtubeExternalSubtitle = new YoutubeExternalSubtitle.Subtitle(document.getElementById('video'), subtitles);
 });
@@ -50,6 +52,3 @@ document.getElementById('fullscreen-btn').addEventListener('click', function(e) 
   });
 
 </script>
-<button id="fullscreen-btn">Tela inteira</button>
-
-
