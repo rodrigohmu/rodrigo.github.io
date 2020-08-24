@@ -4,6 +4,7 @@
 <script src="youtube.external.subtitle.js"></script>
 <script src="subtitles.parser.min.js "></script>
 <script>
+<button id="fullscreen-btn">Tela inteira</button>
 var loadSRT = function(url, callback) {
     var httpRequest = new XMLHttpRequest();
 
