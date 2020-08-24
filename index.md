@@ -4,7 +4,6 @@
 <script src="youtube.external.subtitle.js"></script>
 <script src="subtitles.parser.min.js "></script>
 <script>
-<button id="fullscreen-btn">Tela inteira</button>
 var loadSRT = function(url, callback) {
     var httpRequest = new XMLHttpRequest();
 
@@ -32,6 +31,6 @@ loadSRT('subs/Im_a_Yappie._ptbr.srt', function(subtitles) {
     var youtubeExternalSubtitle = new YoutubeExternalSubtitle.Subtitle(document.getElementById('video'), subtitles);
 });
 </script>
-
+<button id="fullscreen-btn">Tela inteira</button>
 
 
