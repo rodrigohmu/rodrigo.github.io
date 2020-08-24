@@ -1,6 +1,7 @@
 ## Eu sou uma Yappie.
 
 <iframe id="video" width="100%" height="400" src="https://www.youtube.com/embed/jYB822q4LMk" frameborder="0" allowfullscreen="true"></iframe>
+<button id="fullscreen-btn">Tela inteira</button>
 <script src="youtube.external.subtitle.js"></script>
 <script src="subtitles.parser.min.js "></script>
 
