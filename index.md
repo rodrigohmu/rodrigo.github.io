@@ -1,9 +1,9 @@
-## Teste 2
+## Eu sou uma Yappie.
 
 <iframe id="video" width="100%" height="400" src="https://www.youtube.com/embed/jYB822q4LMk" frameborder="0" allowfullscreen="true"></iframe>
 <script src="youtube.external.subtitle.js"></script>
 <script src="subtitles.parser.min.js "></script>
-<button id="fullscreen-btn">Tela inteira</button>
+
 <script>
 var loadSRT = function(url, callback) {
     var httpRequest = new XMLHttpRequest();
@@ -53,3 +53,4 @@ document.getElementById('fullscreen-btn').addEventListener('click', function(e) 
   });
 
 </script>
+<button id="fullscreen-btn">Tela inteira</button>
