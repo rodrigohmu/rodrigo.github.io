@@ -3,6 +3,7 @@
 <iframe id="video" width="100%" height="400" src="https://www.youtube.com/embed/jYB822q4LMk" frameborder="0" allowfullscreen="true"></iframe>
 <script src="youtube.external.subtitle.js"></script>
 <script src="subtitles.parser.min.js "></script>
+<button id="fullscreen-btn">Tela inteira</button>
 <script>
 var loadSRT = function(url, callback) {
     var httpRequest = new XMLHttpRequest();
@@ -27,7 +28,7 @@ var loadSRT = function(url, callback) {
     httpRequest.send(null);
 };
 
-<button id="fullscreen-btn">Tela inteira</button>
+
 
 loadSRT('subs/Im_a_Yappie._ptbr.srt', function(subtitles) {
     var youtubeExternalSubtitle = new YoutubeExternalSubtitle.Subtitle(document.getElementById('video'), subtitles);
