@@ -30,6 +30,25 @@ var loadSRT = function(url, callback) {
 loadSRT('subs/Im_a_Yappie._ptbr.srt', function(subtitles) {
     var youtubeExternalSubtitle = new YoutubeExternalSubtitle.Subtitle(document.getElementById('video'), subtitles);
 });
+
+document.getElementById('fullscreen-btn').addEventListener('click', function(e) {
+    var elem = document.getElementById('fullscreen-container');
+
+    var openFullscreen = function() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.mozRequestFullScreen) { /* Firefox */
+        elem.mozRequestFullScreen();
+      } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE/Edge */
+        elem.msRequestFullscreen();
+      }
+    };
+
+    openFullscreen();
+  });
+
 </script>
 <button id="fullscreen-btn">Tela inteira</button>
 
